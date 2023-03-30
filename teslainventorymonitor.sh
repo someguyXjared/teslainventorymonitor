@@ -62,7 +62,7 @@ for (( ; ; )); do
             -xu $user_var -xp $pass_var -t $user_var \
             -o tls=yes -u "Tesla Inventory Changed" \
             -m "Inventory Change. Go to: $Email1 \n \n Visit it at and the difference is \n $DIFF_OUTPUT" \
-            -a model$model_var.old.txt model$model_var.old.txt
+            -a model$model_var.new.txt model$model_var.old.txt
         echo "Email sent $dt to $user_var" >> model$model_var.log
         sleep 600 
     fi
